@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CORTEX ACADEPOL • Emissão de Avisos</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/logo-acadepol-dourada.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="loading">
+      <div class="logo"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/img/logo-acadepol-dourada.png" />
+        </div>
+        <div>
+          <div>Emissão de Avisos</div>
+          <div>Academia de Polícia do Destiny</div>
+        </div>
+      </div>
+    </header>
+    <form id="formAviso">
+      <label>
+        Assinatura:
+        <input
+          type="text"
+          id="assinaturaAviso"
+          placeholder="Insira sua assinatura:"
+          minlength="3"
+          maxlength="25"
+          required
+        />
+      </label>
+      <label>
+        Cargo:
+        <input
+          type="text"
+          id="cargoAviso"
+          placeholder="Insira seu cargo:"
+          minlength="3"
+          maxlength="35"
+          required
+        />
+      </label>
+      <label class="select">
+        Logo:
+        <select id="logoAviso" required>
+          <option value="">Escolha a logo:</option>
+          <option value="headerAviso-ACADEPOL-DOURADA">ACADEPOL DOURADA</option>
+          <option value="headerAviso-ACADEPOL-AZUL">ACADEPOL AZUL</option>
+          <option value="headerAviso-ACADEPOL-CINZA">ACADEPOL CINZA</option>
+        </select>
+      </label>
+      <label style="width: 100%">
+        Titulo:
+        <input
+          type="text"
+          id="tituloAviso"
+          placeholder="Insira o titulo do aviso:"
+          minlength="6"
+          maxlength="55"
+          required
+        />
+      </label>
+      <label class="textarea">
+        <div style="margin-bottom: 10px">Aviso:</div>
+        <textarea
+          style="width: 99%"
+          id="textoAviso"
+          placeholder="AVISO:"
+        ></textarea>
+      </label>
+      <input type="submit" id="gerarAviso" value="GERAR AVISO" />
+    </form>
+    <div class="download-edite" style="display: none">
+      <a id="downloadAviso" href="" download>
+        <button type="button">DOWNLOAD AVISO</button>
+      </a>
+      <button type="button" id="editarAviso">EDITAR AVISO</button>
+    </div>
+    <center><img src="" id="imageAvisoGerado" style="display: none" /></center>
+    <div id="avisoGerado" style="display: none">
+      <div class="headerAviso"><div class="headerAvisoTitle"></div></div>
+      <div class="lineAviso"></div>
+      <div class="conteudoAviso"></div>
+      <div class="assinaturaAviso">
+        <span
+          id="setAssinaturaAviso"
+          class="assinaturaNome"
+          style="font-family: 'Homemade Apple' !important"
+        ></span>
+        <span id="setCargoAviso" class="assinaturaCargo"></span>
+      </div>
+      <div class="footerAviso">
+        <img
+          src="https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/iconFooter.png"
+          height="60px"
+        />
+        <span class="footerAssinado">
+          Documento assinado eletronicamente por
+          <span style="font-weight: 800"
+            ><span id="setAssinaturaAviso2"></span>,
+            <span id="setCargoAviso2"></span></span
+          >, em <span id="setData"></span>, às <span id="setHora"></span>,
+          conforme horário oficial de Brasília.
+        </span>
+      </div>
+    </div>
+    <footer>
+      <a href="" target="_blank" title="WhatsApp">
+        <i class="fa fa-solid fa-gears" style="margin-top: 3px">&nbsp;</i
+        >Developed by:Kuster
+        <div style="font-family: 'Homemade Apple' !important; font-size: 0">
+          ☠
+        </div>
+      </a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="./assets/js/nicEdit.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-7FXD627SPT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-7FXD627SPT");
+    </script>
+  </body>
+</html>

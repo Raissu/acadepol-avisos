@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  color: #000000;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+header {
+  background: #000000;
+  background-image: radial-gradient(ellipse at center, #ff5499 1%, #000 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+}
+input[type="submit"],
+button {
+  transition: all 0.5s 0s ease-out;
+}
+input[type="submit"]:hover,
+button:hover {
+  transition: all 0.5s 0s ease-out;
+  transform: translate(0px, 5px);
+}
+.loading {
+  background: #000000;
+  background-image: radial-gradient(ellipse at center, #f676d2 1%, #000 100%);
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading .logo {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/logo-acadepol-dourada.png");
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+.loading .logo i {
+  margin-top: 300px;
+  font-size: 40px;
+}
+header .container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+header .container .logo img {
+  width: 200px;
+  padding: 20px;
+  transition: all 0.5s 0.2s ease-out;
+}
+header .container .logo img:hover {
+  transition: all 0.5s 0s ease-out;
+  transform: rotate(-10deg);
+  opacity: 0.6;
+}
+#formAviso {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#formAviso label {
+  width: 48%;
+  margin-top: 40px;
+}
+#formAviso label input {
+  display: block;
+  width: calc(100% - 22px);
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border: 1px solid rgb(204, 204, 204);
+}
+#formAviso label.select {
+  width: 100%;
+}
+#formAviso label.select select {
+  width: calc(100% - 22px);
+  height: 45px;
+  margin-top: 10px;
+  padding-left: 10px;
+  box-sizing: content-box;
+}
+#formAviso label.select select option {
+  font-size: 18px;
+  text-align: center;
+}
+#formAviso label.textarea {
+  width: 100%;
+}
+#formAviso label.textarea textarea {
+  width: calc(100% - 22px);
+  height: 300px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+#formAviso input[type="submit"] {
+  width: calc(100% - 22px);
+  height: 60px;
+  margin-top: 40px;
+  box-sizing: content-box;
+  margin-right: -20px;
+  background: #000;
+  background-image: radial-gradient(ellipse at center, #2a2a2a 1%, #000 100%);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+textarea,
+input,
+.nicEdit-main,
+select {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+select {
+  border: 1px solid rgb(204, 204, 204);
+}
+footer {
+  width: 100%;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  background: #000000;
+  background-image: radial-gradient(ellipse at center, #2a2a2a 1%, #000 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.download-edite {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.download-edite #downloadAviso {
+  width: 49%;
+}
+.download-edite #downloadAviso button {
+  width: 100%;
+  height: 60px;
+  background: #000;
+  background-image: radial-gradient(ellipse at center, #2a2a2a 1%, #000 100%);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.download-edite #editarAviso {
+  width: 49%;
+  height: 60px;
+  background: #000;
+  background-image: radial-gradient(ellipse at center, #2a2a2a 1%, #000 100%);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+#avisoGerado {
+  color: #000000;
+  font-size: 17px;
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#avisoGerado .headerAviso {
+  width: 1024px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+}
+#avisoGerado #headerAviso-SEC {
+  background-image: url("https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/headerAviso-SEC.png");
+}
+#avisoGerado #headerAviso-ACADEPOL-DOURADA {
+  background-image: url("../img/headerAviso-ACADEPOL-DOURADA.png");
+}
+#avisoGerado #headerAviso-ACADEPOL-AZUL {
+  background-image: url("https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/headerAviso-ACADEPOL-AZUL.png");
+}
+#avisoGerado #headerAviso-ACADEPOL-CINZA {
+  background-image: url("https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/headerAviso-ACADEPOL-CINZA.png");
+}
+#avisoGerado .headerAvisoTitle {
+  font-family: "Tinos";
+  font-weight: 900;
+  color: #403c3c;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 120px;
+}
+#avisoGerado .lineAviso {
+  width: 1024px;
+  height: 6px;
+  background-image: url("https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/line.png");
+}
+#avisoGerado .conteudoAviso {
+  font-family: "Tinos";
+  font-size: 18px;
+  line-height: 28px;
+  width: 650px;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: url("https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/dpd.png")
+    center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  word-wrap: break-word;
+}
+#avisoGerado .assinaturaAviso {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#avisoGerado .assinaturaAviso span.assinaturaNome {
+  font-family: "Homemade Apple" !important;
+  font-size: 24px;
+  background: url("https://policiadestiny.github.io/cortex/sec/emitir-avisos/assets/img/lineAssinatura.png")
+    center 40px;
+  background-repeat: no-repeat;
+}
+#avisoGerado .assinaturaAviso span.assinaturaCargo {
+  font-family: "Tinos";
+  font-size: 20px;
+  margin-top: 10px;
+}
+#avisoGerado .footerAviso {
+  display: flex;
+  width: 966px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+#avisoGerado .footerAviso span.footerAssinado {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-left: 20px;
+  width: 820px;
+}
+#avisoGerado ul li {
+  list-style-type: none;
+}
+#avisoGerado ul li:before {
+  content: "• ";
+  margin-left: -1em;
+}
+#avisoGerado ol li {
+  list-style-type: none;
+}
+#avisoGerado ol li:before {
+  content: "- ";
+  margin-left: -1em;
+}
+#formAviso .textarea img,
+#avisoGerado .conteudoAviso img {
+  max-width: 750px;
+}
+@media (max-width: 1024px) {
+  header .container {
+    font-size: 20px;
+  }
+  #formAviso label {
+    font-size: 14px;
+  }
+  .download-edite {
+    width: 85%;
+  }
+  #imageAvisoGerado {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 15px;
+  }
+  header .container .logo img {
+    width: 150px;
+  }
+  #formAviso {
+    flex-direction: column;
+  }
+  #formAviso label {
+    width: 100%;
+    font-size: 12px;
+  }
+  #formAviso label input,
+  #formAviso label.select select,
+  #formAviso label.textarea textarea,
+  #formAviso input[type="submit"] {
+    width: calc(100% - 22px);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  #formAviso label.select select option {
+    font-size: 12px;
+  }
+  #formAviso input[type="submit"] {
+    margin-top: 18px;
+  }
+  .download-edite {
+    flex-direction: column;
+    width: 95%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .download-edite #downloadAviso,
+  .download-edite #editarAviso {
+    width: 100%;
+  }
+  .download-edite #editarAviso {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  #imageAvisoGerado {
+    width: 95%;
+  }
+  footer {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+}
+@media (max-width: 320px) {
+  header .container {
+    font-size: 13px;
+  }
+}
