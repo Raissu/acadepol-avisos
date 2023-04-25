@@ -13,7 +13,7 @@ a:active {
 }
 header {
   background: #000000;
-  background-image: radial-gradient(ellipse at center, #ff5499 1%, #000 100%);
+  background-image: radial-gradient(ellipse at center, #1e1d1d 1%, #000 100%);
   color: #ffffff;
   font-weight: 700;
   font-size: 30px;
@@ -29,7 +29,7 @@ button:hover {
 }
 .loading {
   background: #000000;
-  background-image: radial-gradient(ellipse at center, #f676d2 1%, #000 100%);
+  background-image: radial-gradient(ellipse at center, #1e1d1d 1%, #1c1c1c 100%);
   position: fixed;
   z-index: 4;
   width: 100%;
